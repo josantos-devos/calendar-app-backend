@@ -29,7 +29,7 @@ const createEvent = async( req, res ) => {
         
         res.status(201).json({
             ok: true,
-            msg: dbEvent
+            event: dbEvent
         })
         
     } catch (error) {

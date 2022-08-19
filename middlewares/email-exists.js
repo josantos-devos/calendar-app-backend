@@ -7,7 +7,7 @@ const emailExists = async( req, res, next ) => {
 
     if( user ) {
         
-        res.status(400).json({
+        return res.status(400).json({
             ok: false,
             msg: 'email already used'
         })

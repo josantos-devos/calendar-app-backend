@@ -26,6 +26,6 @@ router.post( '/register', [
     emailExists
 ], register );
 
-router.post( '/renew', validateJWT, renewToken );
+router.get( '/renew', validateJWT, renewToken );
 
 module.exports = router;
